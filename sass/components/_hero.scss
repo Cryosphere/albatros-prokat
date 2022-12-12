@@ -1,0 +1,115 @@
+.hat {
+  max-width: 1600px;
+  height: 400px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-top: 118px;
+  padding-bottom: 118px;
+
+  text-align: center;
+
+  background-color: var(--background-color-hero);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media screen and (min-width: $tablet) {
+      height: 400px;
+}
+  @media screen and (min-width: $desktop) {
+      max-width: 3200px;
+      height: 600px;
+      padding-top: 200px;
+      padding-bottom: 200px;
+}
+  // mobile screen
+  background-image: linear-gradient(
+    0deg,
+    var(--linear-gradient-hero),
+    var(--linear-gradient-hero)
+  ),
+  url(../images/hero/img_480.jpg);
+  // mobile screen retina
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+    0deg,
+    var(--linear-gradient-hero),
+    var(--linear-gradient-hero)
+  ),
+  url(../images/hero/img_960.jpg);
+  }
+  // tablet screen
+  @media screen  and (min-width: 481px) {
+    background-image: linear-gradient(
+      0deg,
+      var(--linear-gradient-hero),
+      var(--linear-gradient-hero)
+    ),
+    url(../images/hero/img_768.jpg);
+  }
+  // tablet screen retina
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+    0deg,
+    var(--linear-gradient-hero),
+    var(--linear-gradient-hero)
+  ),
+  url(../images/hero/img_1536.jpg);
+  }
+  // desktop screen
+  @media screen  and (min-width: 769px) {
+    background-image: linear-gradient(
+      0deg,
+      var(--linear-gradient-hero),
+      var(--linear-gradient-hero)
+    ),
+    url(../images/hero/img_1600.jpg);
+  }
+  // desktop screen retina
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+    0deg,
+    var(--linear-gradient-hero),
+    var(--linear-gradient-hero)
+  ),
+  url(../images/hero/img_3200.jpg);
+  }
+
+}
+
+.hero__title {
+    margin-bottom: 30px;
+    max-width: 360px;
+    margin-right: auto;
+    margin-left: auto;
+
+
+    font-weight: 900;
+    font-size: 26px;
+    line-height: calc(42 / 26);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+
+    @media screen and (min-width: $desktop) {
+        max-width: 696px;
+        font-size: 44px;
+        line-height: calc(60 / 44);
+}
+}
+
+.hero_btn {
+    padding: 10px 24px;
+
+    @media screen and (min-width: $desktop) {
+        padding: 10px 32px;
+}
+}

@@ -1,0 +1,51 @@
+.invite {
+    @media screen  and (max-width: 767px) {
+        margin-top: 60px;
+    }
+    @media screen  and (min-width: $desktop) {
+        margin-left: 70px;
+    }
+}
+
+.invite__after {
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+}
+
+.invite__list {
+    display: flex;
+    justify-content: center;
+
+    @media screen  and (min-width: $tablet) {
+        display: flex;
+    }
+    @media screen  and (min-width: $desktop) {
+        display: flex;
+    } 
+}
+
+.invite__item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.invite__link {
+    color: var(--primary-white-color);
+    background-color: rgba(255, 255, 255, 0.1);
+
+    transition: background-color var(--time) var(--cubic-bezier);
+    }
+
+.invite__link:hover,
+.invite__link:focus {
+    background-color: var(--accent-color);
+
+}
+
+.invite__icon {
+    fill: currentColor;
+}

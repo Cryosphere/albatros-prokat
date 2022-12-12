@@ -1,0 +1,23 @@
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --primary-white-color: #FFFFFF;
+    --footer-background: #2F303A;
+    --accent-color: #2196F3;
+    --footer-contact-color: rgba(255, 255, 255, 0.6);
+    --hero-btn-activ: #188CE8;
+    --filters-btn-bg: #F5F4FA;
+    --logo-color: #000000;
+    --border-filters:  #EEEEEE;
+    --background-color-hero: #c4c4c4;
+    --linear-gradient-hero: rgba(47, 48, 58, 0.4);
+    --social-color: #AFB1B8;
+    --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
+    --time: 250ms;
+}
+
+// BREAKPOINTS
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1200px;
+
