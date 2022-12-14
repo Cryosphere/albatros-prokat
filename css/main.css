@@ -1094,6 +1094,7 @@ button {
 }
 
 .filters__btn {
+  height: 60px;
   padding: 6px 22px;
   font-weight: 500;
   font-size: 16px;
