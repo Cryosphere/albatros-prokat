@@ -1,12 +1,542 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Студія</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <!--Верхня лінія-->
+    <header class="header">
+      <div class="header__container container">
+        <a href="./index.html" class="header__logo logo"
+          ><span class="logo__basic">Альбатрос </span><span class="logo__secondary">Прокат</span></a
+        >
+        <nav class="nav header__nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="./index.html" class="nav__link link">Компанія</a>
+            </li>
+            <li class="nav__item">
+              <a href="./goods.html" class="nav__link nav__link--current link">Продукція</a>
+            </li>
+            <li class="nav__item">
+                <a href="./contact.html" class="nav__link link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="contact">
+          <li class="contact__item">
+            <a
+              aria-label="e-mail pscdnipro@gmail.com"
+              href="mailto:pscdnipro@gmail.com"
+              class="contact__link link"
+            >
+              <svg class="contact__icons" width="16" height="12">
+                <use href="./images/icons.svg#mail"></use></svg
+              >pscdnipro@gmail.com
+            </a>
+          </li>
+          <li class="contact__item">
+            <a aria-label="phone +380669171773" href="tel:+380669171773" class="contact__link link">
+              <svg class="contact__icons" width="10" height="16">
+                <use href="./images/icons.svg#tel"></use></svg
+              >+380 66 917 17 73
+            </a>
+          </li>
+        </ul>
+
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg width="40" height="40" aria-label="мобільне меню">
+            <use class="menu-btn" href="./images/icons.svg#menu"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Фільтри -->
+
+    <main>
+      <section class="filters section">
+        <div class="container">
+          <h1 class="visually-hidden">Фільтри</h1>
+
+          <ul class="filters__list">
+            <li class="filters__item">
+                <a href="./profnastil.html" class="link"><button class="filters__btn btn" type="button">Профнастіли</button></a>
+            </li>
+            <li class="filters__item">
+              <button class="filters__btn btn" type="button">Металлочерепиця</button>
+            </li>
+            <li class="filters__item">
+              <button class="filters__btn btn" type="button">Сендвіч-панелі</button>
+            </li>
+            <li class="filters__item">
+              <button class="filters__btn btn" type="button">Вентельовані фасади</button>
+            </li>
+            <li class="filters__item">
+              <button class="filters__btn btn" type="button">ЛСТК</button>
+            </li>
+            <li class="filters__item">
+              <button class="filters__btn btn" type="button">Водостічні системи</button>
+            </li>
+            <li class="filters__item">
+              <button class="filters__btn btn" type="button">Супутні товари</button>
+            </li>
+            <li class="filters__item">
+              <button class="filters__btn btn" type="button">Забори-жалюзі</button>
+            </li>
+            <li class="filters__item">
+              <button class="filters__btn btn" type="button">Фасадні касети</button>
+            </li>
+          </ul>
+          <ul class="offers__list">
+            <li class="offers__item">
+              <a class="offers__link" href="./profnastil.html">
+                <div class="content">
+                  <img
+                    class="content__photo"
+                    srcset="
+                      ./images/filters/img_354.jpg 354w,
+                      ./images/filters/img_370.jpg 370w,
+                      ./images/filters/img_450.jpg 450w,
+                      ./images/filters/img_708.jpg 708w,
+                      ./images/filters/img_740.jpg 740w,
+                      ./images/filters/img_900.jpg 900w
+                    "
+                    src="./images/filters/img_370.jpg 370w,"
+                    alt="macbook"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    loading="lazy"
+                  />
+                  <p class="content__after">
+                    Профнастіл - це будівельний матеріал, що представляє собою металічний лист, виготовлений з листової оцинкованої сталі
+                     холодною прокаткою. Призначений для використання у будівництві дахів, зведенні зовнішніх стін, огорож. Виготовляються
+                      профільовані листи сталеві з покриттям металізаційним і органічним або без органічного.
+                  </p>
+                </div>
+                <div class="filters__name">
+                  <h2 class="filters__title">ПС8</h2>
+                </div>
+              </a>
+            </li>
+            <li class="offers__item">
+              <a href="#" class="offers__link">
+                <div class="content">
+                  <img
+                    class="content__photo"
+                    srcset="
+                      ./images/filters/img_354-1.jpg 354w,
+                      ./images/filters/img_370-1.jpg 370w,
+                      ./images/filters/img_450-1.jpg 450w,
+                      ./images/filters/img_708-1.jpg 708w,
+                      ./images/filters/img_740-1.jpg 740w,
+                      ./images/filters/img_900-1.jpg 900w
+                    "
+                    src="./images/filters/img_370-1.jpg 370w,"
+                    alt="Баскетбол"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    loading="lazy"
+                  />
+                  <p class="content__after">
+                    Металочерепиця - це  покрівельний матеріал з бляхи, вкритої полімерним матеріалом, профільованої форми у вигляді
+                     черепиці/дахівки.
+                  </p>
+                </div>
+                <div class="filters__name">
+                  <h2 class="filters__title">ПС10</h2>
+                </div>
+              </a>
+            </li>
+            <li class="offers__item">
+              <a href="" class="offers__link">
+                <div class="content">
+                  <img
+                    class="content__photo"
+                    srcset="
+                      ./images/filters/img_354-2.jpg 354w,
+                      ./images/filters/img_370-2.jpg 370w,
+                      ./images/filters/img_450-2.jpg 450w,
+                      ./images/filters/img_708-2.jpg 708w,
+                      ./images/filters/img_740-2.jpg 740w,
+                      ./images/filters/img_900-2.jpg 900w
+                    "
+                    src="./images/filters/img_370-2.jpg 370w,"
+                    alt="Ресторан Seafood"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    loading="lazy"
+                  />
+                  <p class="content__after">
+                    Сендвіч-панелі - це будівельний матеріал, що має тришарову структуру: два листи жорсткого матеріалу і шар утеплювача між ними.
+                  </p>
+                </div>
+                <div class="filters__name">
+                  <h2 class="filters__title">ПК57</h2>
+                </div>
+              </a>
+            </li>
+            <li class="offers__item">
+              <a href="" class="offers__link">
+                <div class="content">
+                  <img
+                    class="content__photo"
+                    srcset="
+                      ./images/filters/img_354-3.jpg 354w,
+                      ./images/filters/img_370-3.jpg 370w,
+                      ./images/filters/img_450-3.jpg 450w,
+                      ./images/filters/img_708-3.jpg 708w,
+                      ./images/filters/img_740-3.jpg 740w,
+                      ./images/filters/img_900-3.jpg 900w
+                    "
+                    src="./images/filters/img_370-3.jpg 370w,"
+                    alt="Навушники"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    loading="lazy"
+                  />
+                  <p class="content__after">
+                    Вентильовані фасади - це це один з різновидів зовнішньої обробки стін будинку. Полягає він в кріпленні на стіну каркасу,
+                     на який вже монтуються спеціальні панелі.це один з різновидів зовнішньої обробки стін будинку. Полягає він в кріпленні на 
+                     стіну каркасу, на який вже монтуються спеціальні панелі.
+                  </p>
+                </div>
+                <div class="filters__name">
+                  <h2 class="filters__title">ПК35</h2>
+                </div>
+              </a>
+            </li>
+            <li class="offers__item">
+              <a href="" class="offers__link">
+                <div class="content">
+                  <img
+                    class="content__photo"
+                    srcset="
+                      ./images/filters/img_354-4.jpg 354w,
+                      ./images/filters/img_370-4.jpg 370w,
+                      ./images/filters/img_450-4.jpg 450w,
+                      ./images/filters/img_708-4.jpg 708w,
+                      ./images/filters/img_740-4.jpg 740w,
+                      ./images/filters/img_900-4.jpg 900w
+                    "
+                    src="./images/filters/img_370-4.jpg 370w,"
+                    alt="Коробка"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    loading="lazy"
+                  />
+                  <p class="content__after">
+                    ЛСТК- це будівельна конструкція з тонкої сталі, що використовується для будівництва швидкобудуюємі будівлі.
+                  </p>
+                </div>
+                <div class="filters__name">
+                  <h2 class="filters__title">ПК44</h2>
+                </div>
+              </a>
+            </li>
+            <li class="offers__item">
+              <a href="" class="offers__link">
+                <div class="content">
+                  <img
+                    class="content__photo"
+                    srcset="
+                      ./images/filters/img_354-5.jpg 354w,
+                      ./images/filters/img_370-5.jpg 370w,
+                      ./images/filters/img_450-5.jpg 450w,
+                      ./images/filters/img_708-5.jpg 708w,
+                      ./images/filters/img_740-5.jpg 740w,
+                      ./images/filters/img_900-5.jpg 900w
+                    "
+                    src="./images/filters/img_370-5.jpg 370w,"
+                    alt="Компьютер imac"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    loading="lazy"
+                  />
+                  <p class="content__after">
+                    Водостічні системи - це системи, що складаються із труб, жолобів та з'єднувальних елементів.
+                  </p>
+                </div>
+                <div class="filters__name">
+                  <h2 class="filters__title">ПК57</h2>
+                </div>
+              </a>
+            </li>
+            <!-- <li class="offers__item">
+              <a href="" class="offers__link">
+                <div class="content">
+                  <img
+                    class="content__photo"
+                    srcset="
+                      ./images/filters/img_354-6.jpg 354w,
+                      ./images/filters/img_370-6.jpg 370w,
+                      ./images/filters/img_450-6.jpg 450w,
+                      ./images/filters/img_708-6.jpg 708w,
+                      ./images/filters/img_740-6.jpg 740w,
+                      ./images/filters/img_900-6.jpg 900w
+                    "
+                    src="./images/filters/img_370-6.jpg 370w,"
+                    alt="Книга"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    loading="lazy"
+                  />
+                  <p class="content__after">
+                    До супутніх товарів відносять металеві профілі, планки, мембрани, саморізи. 
+                  </p>
+                </div>
+                <div class="filters__name">
+                  <h2 class="filters__title">Супутні товари</h2>
+                </div>
+              </a>
+            </li>
+            <li class="offers__item">
+              <a href="" class="offers__link">
+                <div class="content">
+                  <img
+                    class="content__photo"
+                    srcset="
+                      ./images/filters/img_354-7.jpg 354w,
+                      ./images/filters/img_370-7.jpg 370w,
+                      ./images/filters/img_450-7.jpg 450w,
+                      ./images/filters/img_708-7.jpg 708w,
+                      ./images/filters/img_740-7.jpg 740w,
+                      ./images/filters/img_900-7.jpg 900w
+                    "
+                    src="./images/filters/img_370-7.jpg 370w,"
+                    alt="Бірка"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    loading="lazy"
+                  />
+                  <p class="content__after">
+                    Забори-жалюзі - це сучасний тип огорож, основна особливість якого полягає в розташуванні ламелей:
+                     вони кріпляться до несучої конструкції горизонтально під кутом, нагадуючи тим самим жалюзі .
+                  </p>
+                </div>
+                <div class="filters__name">
+                  <h2 class="filters__title">Забори-жалюзі</h2>
+                </div>
+              </a>
+            </li>
+            <li class="offers__item">
+              <a href="" class="offers__link">
+                <div class="content">
+                  <img
+                    class="content__photo"
+                    srcset="
+                      ./images/filters/img_354-8.jpg 354w,
+                      ./images/filters/img_370-8.jpg 370w,
+                      ./images/filters/img_450-8.jpg 450w,
+                      ./images/filters/img_708-8.jpg 708w,
+                      ./images/filters/img_740-8.jpg 740w,
+                      ./images/filters/img_900-8.jpg 900w
+                    "
+                    src="./images/filters/img_370-8.jpg 370w,"
+                    alt="macbook2"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    loading="lazy"
+                  />
+                  <p class="content__after">
+                    Фасадні панелі - це сучасний облицювальний матеріал, призначений для обшивки фасаду, а також для
+                     обробки цоколя, оформлення колон, веранд, балконів.
+                  </p>
+                </div>
+                <div class="filters__name">
+                  <h2 class="filters__title">Фасадні панелі</h2>
+                </div>
+              </a>
+            </li> -->
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- Підвал -->
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__address">
+          <div class="footer__contact">
+            <a href="./index.html" class="footer__contact--logo logo"
+              ><span class="logo__basic">Альбатрос</span
+              ><span class="logo__secondary logo__secondar--footer">Прокат</span></a>
+            <address class="address">
+              <ul class="address__list">
+                <li class="address__item">
+                  <a
+                  class="address__maps"
+                  href="https://goo.gl/maps/k9zxu89nJEVWJZ9q8"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >Дніпро, Криворізьке шосе, 21</a
+                >
+                </li>
+                <li class="address__item">
+                  <a class="address__mail" href="mailto:info@devstudio.com">pscdnipro@gmail.com</a>
+                </li>
+                <li class="address__item">
+                  <a class="address__tel" href="tel:+380669171773">+380669171773</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="invite">
+            <p class="invite__after">приєднуйтесь</p>
+            <ul class="invite__list">
+              <li class="invite__item">
+                <a
+                  class="invite__link socials"
+                  href="https://www.instagram.com/"
+                  aria-label="значок instagram"
+                  target="_blank"
+                  rel="nofollow noopener noreferre"
+                  ><svg class="invite__icon" width="20" height="20">
+                    <use href="./images/icons.svg#instagram"></use></svg
+                ></a>
+              </li>
+              <li class="invite__item">
+                <a
+                  class="invite__link socials"
+                  href="https://twitter.com/?lang=uk"
+                  aria-label="значок twitter"
+                  target="_blank"
+                  rel="nofollow noopener noreferre"
+                  ><svg class="invite__icon" width="20" height="20">
+                    <use href="./images/icons.svg#twitter"></use></svg
+                ></a>
+              </li>
+              <li class="invite__item">
+                <a
+                  class="invite__link socials"
+                  href="https://uk-ua.facebook.com/"
+                  aria-label="значок facebook"
+                  target="_blank"
+                  rel="nofollow noopener noreferre"
+                  ><svg class="invite__icon" width="20" height="20">
+                    <use href="./images/icons.svg#facebook"></use></svg
+                ></a>
+              </li>
+              <li class="invite__item">
+                <a
+                  class="invite__link socials"
+                  href="https://www.linkedin.com/"
+                  aria-label="значок linkedin"
+                  target="_blank"
+                  rel="nofollow noopener noreferre"
+                  ><svg class="invite__icon" width="20" height="20">
+                    <use href="./images/icons.svg#linkedin"></use></svg
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="subscribe">
+          <p class="subscribe__after">Підпишіться на розсилку</p>
+          <form class="subscribe__form">
+            <input class="subscribe__email" type="email" name="email" placeholder="E-mail" />
+            <button class="subscribe__btn btn" type="submit">
+              Підписатися<svg class="subscribe__icon" width="24" height="24">
+                <use href="./images/icons.svg#send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg width="40" height="40" aria-label="мобільне меню">
+          <use class="menu-close" href="./images/icons.svg#close_m"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="./index.html">Студія</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="./goods.html">Портфоліо</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="./index.html">Контакти</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-contacts">
+        <li class="mobile-contacts__item">
+          <a class="mobile-contacts__link mobile-contacts--tel" href="tel:+380669171773">
+            +380669171773</a
+          >
+        </li>
+        <li class="mobile-contacts__item">
+          <a class="mobile-contacts__link mobile-contacts--mail" href="mailto:info@devstudio.com">
+            info@devstudio.com</a
+          >
+        </li>
+      </ul>
+
+      <ul class="mobile-social">
+        <li class="mobile-social__item">
+          <a
+            href="https://www.instagram.com/"
+            aria-label="значок instagram"
+            target="_blank"
+            rel="nofollow noopener noreferre"
+            class="mobile-social"
+            >Instagram</a
+          >
+        </li>
+        <li class="mobile-social__item">
+          <a
+            href="https://twitter.com/?lang=uk"
+            aria-label="значок twitter"
+            target="_blank"
+            rel="nofollow noopener noreferre"
+            class="mobile-social"
+            >Twitter</a
+          >
+        </li>
+        <li class="mobile-social__item">
+          <a
+            href="https://uk-ua.facebook.com/"
+            aria-label="значок facebook"
+            target="_blank"
+            rel="nofollow noopener noreferre"
+            class="mobile-social"
+            >Facebook</a
+          >
+        </li>
+        <li class="mobile-social__item">
+          <a
+            href="https://www.linkedin.com/"
+            aria-label="значок linkedin"
+            target="_blank"
+            rel="nofollow noopener noreferre"
+            class="mobile-social"
+            >LinkedIn</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
+  </body>
 </html>

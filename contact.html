@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Студія</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <!--Верхня лінія-->
+    <header class="header">
+      <div class="header__container container">
+        <a href="./index.html" class="header__logo logo"
+          ><span class="logo__basic">Альбатрос </span><span class="logo__secondary">Прокат</span></a
+        >
+        <nav class="nav header__nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="./index.html" class="nav__link link">Компанія</a>
+            </li>
+            <li class="nav__item">
+              <a href="./goods.html" class="nav__link link">Продукція</a>
+            </li>
+            <li class="nav__item">
+              <a href="./contact.html" class="nav__link nav__link--current link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="contact">
+          <li class="contact__item">
+            <a
+              aria-label="e-mail pscdnipro@gmail.com"
+              href="mailto:pscdnipro@gmail.com"
+              class="contact__link link"
+            >
+              <svg class="contact__icons" width="16" height="12">
+                <use href="./images/icons.svg#mail"></use></svg
+              >pscdnipro@gmail.com
+            </a>
+          </li>
+          <li class="contact__item">
+            <a aria-label="phone +380669171773" href="tel:+380669171773" class="contact__link link">
+              <svg class="contact__icons" width="10" height="16">
+                <use href="./images/icons.svg#tel"></use></svg
+              >+380 66 917 17 73
+            </a>
+          </li>
+        </ul>
+
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg width="40" height="40" aria-label="мобільне меню">
+            <use class="menu-btn" href="./images/icons.svg#menu"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Фільтри -->
+
+    <main>
+        <div class="container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2209.921573976465!2d34.945740156566984!3d48.43545105966257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe5baea87d6d1%3A0xf80277d46b1e898e!2z0JDQu9GM0LHQsNGC0YDQvtGBINCf0YDQvtC60LDRgiwg0KLQntCS!5e0!3m2!1sru!2snl!4v1671116428017!5m2!1sru!2snl" width=100% height="540" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </main>
+
+    <!-- Підвал -->
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__address">
+          <div class="footer__contact">
+            <a href="./index.html" class="footer__contact--logo logo"
+              ><span class="logo__basic">Альбатрос</span
+              ><span class="logo__secondary logo__secondar--footer">Прокат</span></a>
+            <address class="address">
+              <ul class="address__list">
+                <li class="address__item">
+                  <a
+                    class="address__maps"
+                    href="https://goo.gl/maps/k9zxu89nJEVWJZ9q8"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    >Дніпро, Криворізьке шосе, 21</a
+                  >
+                </li>
+                <li class="address__item">
+                  <a class="address__mail" href="mailto:info@devstudio.com">pscdnipro@gmail.com</a>
+                </li>
+                <li class="address__item">
+                  <a class="address__tel" href="tel:+380669171773">+380669171773</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="invite">
+            <p class="invite__after">приєднуйтесь</p>
+            <ul class="invite__list">
+              <li class="invite__item">
+                <a
+                  class="invite__link socials"
+                  href="https://www.instagram.com/"
+                  aria-label="значок instagram"
+                  target="_blank"
+                  rel="nofollow noopener noreferre"
+                  ><svg class="invite__icon" width="20" height="20">
+                    <use href="./images/icons.svg#instagram"></use></svg
+                ></a>
+              </li>
+              <li class="invite__item">
+                <a
+                  class="invite__link socials"
+                  href="https://twitter.com/?lang=uk"
+                  aria-label="значок twitter"
+                  target="_blank"
+                  rel="nofollow noopener noreferre"
+                  ><svg class="invite__icon" width="20" height="20">
+                    <use href="./images/icons.svg#twitter"></use></svg
+                ></a>
+              </li>
+              <li class="invite__item">
+                <a
+                  class="invite__link socials"
+                  href="https://uk-ua.facebook.com/"
+                  aria-label="значок facebook"
+                  target="_blank"
+                  rel="nofollow noopener noreferre"
+                  ><svg class="invite__icon" width="20" height="20">
+                    <use href="./images/icons.svg#facebook"></use></svg
+                ></a>
+              </li>
+              <li class="invite__item">
+                <a
+                  class="invite__link socials"
+                  href="https://www.linkedin.com/"
+                  aria-label="значок linkedin"
+                  target="_blank"
+                  rel="nofollow noopener noreferre"
+                  ><svg class="invite__icon" width="20" height="20">
+                    <use href="./images/icons.svg#linkedin"></use></svg
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="subscribe">
+          <p class="subscribe__after">Підпишіться на розсилку</p>
+          <form class="subscribe__form">
+            <input class="subscribe__email" type="email" name="email" placeholder="E-mail" />
+            <button class="subscribe__btn btn" type="submit">
+              Підписатися<svg class="subscribe__icon" width="24" height="24">
+                <use href="./images/icons.svg#send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg width="40" height="40" aria-label="мобільне меню">
+          <use class="menu-close" href="./images/icons.svg#close_m"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="./index.html">Студія</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="./goods.html">Портфоліо</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="./index.html">Контакти</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-contacts">
+        <li class="mobile-contacts__item">
+          <a class="mobile-contacts__link mobile-contacts--tel" href="tel:+380669171773">
+            +380669171773</a
+          >
+        </li>
+        <li class="mobile-contacts__item">
+          <a class="mobile-contacts__link mobile-contacts--mail" href="mailto:info@devstudio.com">
+            info@devstudio.com</a
+          >
+        </li>
+      </ul>
+
+      <ul class="mobile-social">
+        <li class="mobile-social__item">
+          <a
+            href="https://www.instagram.com/"
+            aria-label="значок instagram"
+            target="_blank"
+            rel="nofollow noopener noreferre"
+            class="mobile-social"
+            >Instagram</a
+          >
+        </li>
+        <li class="mobile-social__item">
+          <a
+            href="https://twitter.com/?lang=uk"
+            aria-label="значок twitter"
+            target="_blank"
+            rel="nofollow noopener noreferre"
+            class="mobile-social"
+            >Twitter</a
+          >
+        </li>
+        <li class="mobile-social__item">
+          <a
+            href="https://uk-ua.facebook.com/"
+            aria-label="значок facebook"
+            target="_blank"
+            rel="nofollow noopener noreferre"
+            class="mobile-social"
+            >Facebook</a
+          >
+        </li>
+        <li class="mobile-social__item">
+          <a
+            href="https://www.linkedin.com/"
+            aria-label="значок linkedin"
+            target="_blank"
+            rel="nofollow noopener noreferre"
+            class="mobile-social"
+            >LinkedIn</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
+  </body>
+</html>
