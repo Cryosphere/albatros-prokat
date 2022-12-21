@@ -1737,4 +1737,10 @@ td {
 
 .form_radio_btn input[type=radio]:checked + label {
   background: greenyellow;
+}
+
+.calc {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
 }/*# sourceMappingURL=main.css.map */

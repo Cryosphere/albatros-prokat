@@ -19,6 +19,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
   <body>
     <!--Верхня лінія-->
@@ -122,7 +123,8 @@
                       покриття різних кольорів. Він ідеально підходить до облицювальних робіт.
                     </p>
           </div>
-          <h3>Кольори профнастілу</h3>
+          <div class="color">
+          <h2>Кольори профнастілу</h2>
           <table>
             <tbody>
                 <td class="red" >RAL3003</td>
@@ -132,6 +134,7 @@
                 <td class="grey">RAL9006</td>
             </tbody>
         </table>
+        
         <div class="form_radio_btn">
             <input id="radio-1" type="radio" name="radio" value="1" checked>
             <label for="radio-1">&nbsp;&nbsp;&nbsp;&nbsp;</label>
@@ -154,8 +157,18 @@
             <input id="radio-5" type="radio" name="radio" value="3">
             <label for="radio-5">&nbsp;&nbsp;&nbsp;&nbsp;</label>
         </div>
-        <h3>Калькулятор вартості</h3>
-    </div>
+          </div>
+          <div>
+        <h2>Калькулятор вартості</h2>
+        
+          <p class="calc">Введіть ширину виробу(см<sup>2</sup>)</p>
+          <input type="number" min="0" id="width">
+          <p class="calc">Введіть довжину виробу(см<sup>2</sup>)</p>
+          <input type="number" min="0" id="length">
+          <button class="button">Button</button>
+          <p class="calc">Вартість виробу:&nbsp;<span id="outputin"></span> грн</p>
+        </div>
+        </div>
       </section>
     </main>
 
@@ -335,5 +348,6 @@
       crossorigin="anonymous"
     ></script>
     <script defer src="./js/mobile-menu.js"></script>
+    <script src="./js/calc.js"></script>
   </body>
 </html>
