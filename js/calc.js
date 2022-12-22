@@ -9,7 +9,7 @@ $('.button').click(()=>{
     
     console.log(num1, num2, typeof num1, typeof num2);
     
-    const answer = num1 + num2;
+    const answer = num1 * num2*123;
     
-    $('#outputin').text(answer);
+    $('#outputin').text(answer.toFixed(2));
 });
